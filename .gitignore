@@ -1,0 +1,8 @@
+# Encrypted file containing sensitive data # 
+group_vars/all/ansible.yml
+
+# Logs # 
+*.log
+
+# Hosts # 
+hosts
