@@ -1,5 +1,2 @@
 - name: Update & upgrade apt packages
-  become: true
-  apt:
-      upgrade: yes
-      update_cache: yes
+  shell: apt-get -y update && apt-get -y upgrade

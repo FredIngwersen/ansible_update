@@ -1,0 +1,2 @@
+- name: Remove unused kernels & packages
+  shell: apt-get --purge autoremove

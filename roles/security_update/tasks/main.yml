@@ -5,9 +5,5 @@
 - name: make a copy of security repositories
   shell: cat /etc/apt/sources.list|grep secu >/etc/apt/security.sources.list
 
-- name: Update cache
-  apt: update_cache=yes
-
-
 - name: Install security updates
   shell: apt-get upgrade -oDir::Etc::SourceList=/etc/apt/security.sources.list --force-yes -y
